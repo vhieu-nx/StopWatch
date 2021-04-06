@@ -25,11 +25,12 @@ public class StopWatch {
                 if (arr[i] > arr[j]){
                     int temp = arr[i];
                     arr[i] = arr[j];
-                    arr[j]  = arr[i];
+                    arr[j]  = temp;
                 }
             }
         }
         stopWatch.end();
         System.out.println(stopWatch.getElapsedTime());
     }
+
 }
